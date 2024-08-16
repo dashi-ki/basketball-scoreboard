@@ -1,8 +1,123 @@
+@font-face {
+    font-family: "Cursed Timer ULiL";
+    src: url("assets/CursedTimerUlil-Aznm.ttf") format("truetype");
+    font-weight: normal;
+    font-style: normal;
+  }
 body {
     margin: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    font-family: Verdana, sans-serif;
+    background: url(assets/christian-lue-basketball.jpg);
+    background-size: cover;
+    background-color: #15171A;
 }
 
 .container {
     display: flex;
     justify-content: space-around;
+    width:575px;
+    border-radius: 20px;
+    background: linear-gradient(180deg, #111827 0%, #374151 50%, #111827 100%);
+    color: white;
+    padding: 60px 40px;
+}
+h3 {
+    color: #F9FAFB;
+    text-align: center;
+    font-size: 32px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 35.893px; /* 112.165% */
+    letter-spacing: 1.6px;
+    margin: 0;
+}
+
+#team-indicator-home {
+    padding: 8px 16px;
+    background: #BE123C;
+}
+
+#team-indicator-guest {
+    padding: 8px 16px;
+    background: #0369A1;
+}
+
+.score-display {
+    width: 155px;
+    height: 120px;
+    background: #111827;
+    border: solid 1px #E5E7EB;
+    border-radius: 5px;
+    color: #FB7185;
+    text-align: center;
+    font-family: "Cursed Timer ULiL";
+    font-size: 90px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 126.666px; /* 140.74% */
+    margin: 24px 0;
+}
+
+.add-points-btns-container{
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.add-points-btn {
+    display:flex;
+    width: 45px;
+    height: 45px;
+    flex-shrink: 0;
+    border-radius: 5px;
+    border: 1px solid #E5E7EB;
+    background: transparent;
+    color: #FECDD3;
+    text-align: center;
+    font-family: "Cursed Timer ULiL";
+    font-size: 18px;
+    font-style: normal; 
+    font-weight: 400;
+    line-height: 27.812px; /* 154.509% */
+    justify-content: center;
+    align-items: center;
+}
+
+.add-points-btn:hover {
+    background: #111827;
+}
+
+.footer {
+    background: transparent;
+    margin:24px 0;
+    padding: 24px 24px;
+}
+
+.new-game {
+    display:flex;
+    height: 60px;
+    width: 220px;
+    border: none;
+    /* border: 1px solid #E5E7EB; */
+    border-radius: 999px;
+    background: #233148e6;
+    /* opacity:0.7; */
+    color: #fff;
+    font-family: inherit;
+    font-size: 22px;
+    font-weight: 600;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    padding:24px 0;
+    text-transform: uppercase;
+}
+
+.new-game:hover {
+    background: #111827;
 }

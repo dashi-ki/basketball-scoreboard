@@ -5,11 +5,32 @@
     <body>
         <div class="container">
             <div>
-                <h3>HOME</h3>
+                <div id="team-indicator-home">
+                    <h3>HOME</h3>
+                </div>
+                
+                <div class="score-display" id="home-score">0</div>
+                <div class="add-points-btns-container">
+                    <button class="add-points-btn" onclick="incrementHomeOne()">+1</button>
+                    <button class="add-points-btn" onclick="incrementHomeTwo()">+2</button>
+                    <button class="add-points-btn" onclick="incrementHomeThree()">+3</button>
+                </div>
             </div>
             <div>
-                <h3>GUEST</h3>
+                <div id="team-indicator-guest">
+                    <h3>GUEST</h3>
+                </div>
+                
+                <div class="score-display" id="guest-score">0</div>
+                <div class="add-points-btns-container">
+                    <button class="add-points-btn" onclick="incrementGuestOne()">+1</button>
+                    <button class="add-points-btn" onclick="incrementGuestTwo()">+2</button>
+                    <button class="add-points-btn" onclick="incrementGuestThree()">+3</button>
+                </div>
             </div>
+        </div>
+        <div class="footer">
+            <button class="new-game" onclick="newGame()">New Game</button>
         </div>
         <script src="index.js"></script>
     </body>
